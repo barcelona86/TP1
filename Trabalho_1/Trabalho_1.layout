@@ -2,38 +2,6 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="testes.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="538" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="dominios.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="dominios.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="413" topLine="3" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-			<Collapse line="22" />
-			<Collapse line="39" />
-			<Collapse line="54" />
-			<Collapse line="71" />
-			<Collapse line="87" />
-			<Collapse line="103" />
-			<Collapse line="117" />
-			<Collapse line="131" />
-			<Collapse line="145" />
-		</Folding>
-	</File>
-	<File name="main.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="752" topLine="25" />
-		</Cursor>
-	</File>
 	<File name="entidades.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1198" topLine="0" />
@@ -82,6 +50,16 @@
 			<Cursor1 position="2246" topLine="62" />
 		</Cursor>
 	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="752" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="dominios.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="testesEntidades.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="5190" topLine="38" />
@@ -115,9 +93,31 @@
 			<Collapse line="194" />
 		</Folding>
 	</File>
+	<File name="testes.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="538" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="testes.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="237" topLine="6" />
 		</Cursor>
+	</File>
+	<File name="dominios.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="120" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="7" />
+			<Collapse line="22" />
+			<Collapse line="39" />
+			<Collapse line="54" />
+			<Collapse line="71" />
+			<Collapse line="87" />
+			<Collapse line="103" />
+			<Collapse line="117" />
+			<Collapse line="131" />
+			<Collapse line="145" />
+		</Folding>
 	</File>
 </CodeBlocks_layout_file>

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class CodigoImovel{
+class Codigo{
     private:
         string CodigoImovel;
         const static string LIMITE = "00000"
