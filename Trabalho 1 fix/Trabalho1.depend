@@ -1,0 +1,100 @@
+# depslib dependency file v1.0
+1603929966 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\main.cpp
+	<iostream>
+	"dominios.h"
+	"testes.h"
+	"entidades.h"
+	"testesEntidades.h"
+
+1603930996 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\dominios.cpp
+	"dominios.h"
+
+1603929807 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\entidades.cpp
+	"entidades.h"
+
+1603929829 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\testes.cpp
+	"testes.h"
+
+1603930988 c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\include\dominios.h
+	<stdexcept>
+
+1603931202 c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\include\testes.h
+	"dominios.h"
+
+1603930648 c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\include\entidades.h
+	"dominios.h"
+	<string>
+
+1603931159 c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\include\testesentidades.h
+	"dominios.h"
+	"entidades.h"
+
+1603931055 source:c:\users\eduar\documents\github\trabalhos-tp1\trabalho_2\src\testesentidades.cpp
+	"testesEntidades.h"
+
+1614918921 source:c:\users\maciota\desktop\trabalhos-tp1-master\trabalho_2\main.cpp
+	<iostream>
+	"dominios.h"
+	"testes.h"
+	"entidades.h"
+	"testesEntidades.h"
+
+1614919351 c:\users\maciota\desktop\trabalhos-tp1-master\trabalho_2\include\dominios.h
+	<stdexcept>
+
+1614919929 c:\users\maciota\desktop\trabalhos-tp1-master\trabalho_2\include\testes.h
+	"dominios.h"
+
+1614918493 c:\users\maciota\desktop\trabalhos-tp1-master\trabalho_2\include\entidades.h
+	"dominios.h"
+
+1614918561 c:\users\maciota\desktop\trabalhos-tp1-master\trabalho_2\include\testesentidades.h
+	"dominios.h"
+	"entidades.h"
+
+1614919668 source:c:\users\maciota\desktop\trabalhos-tp1-master\trabalho_2\src\dominios.cpp
+	"dominios.h"
+	<iostream>
+
+1603931299 source:c:\users\maciota\desktop\trabalhos-tp1-master\trabalho_2\src\entidades.cpp
+	"entidades.h"
+
+1614918656 source:c:\users\maciota\desktop\trabalhos-tp1-master\trabalho_2\src\testes.cpp
+	"testes.h"
+
+1614918656 source:c:\users\maciota\desktop\trabalhos-tp1-master\trabalho_2\src\testesentidades.cpp
+	"testesEntidades.h"
+
+1614918921 source:c:\users\maciota\desktop\trabalho 1 fix\main.cpp
+	<iostream>
+	"dominios.h"
+	"testes.h"
+	"entidades.h"
+	"testesEntidades.h"
+
+1614919351 c:\users\maciota\desktop\trabalho 1 fix\include\dominios.h
+	<stdexcept>
+
+1614919929 c:\users\maciota\desktop\trabalho 1 fix\include\testes.h
+	"dominios.h"
+
+1614918493 c:\users\maciota\desktop\trabalho 1 fix\include\entidades.h
+	"dominios.h"
+
+1614918561 c:\users\maciota\desktop\trabalho 1 fix\include\testesentidades.h
+	"dominios.h"
+	"entidades.h"
+
+1614919668 source:c:\users\maciota\desktop\trabalho 1 fix\src\dominios.cpp
+	"dominios.h"
+	<iostream>
+
+1603931299 source:c:\users\maciota\desktop\trabalho 1 fix\src\entidades.cpp
+	"entidades.h"
+
+1614918656 source:c:\users\maciota\desktop\trabalho 1 fix\src\testes.cpp
+	"testes.h"
+
+1614918656 source:c:\users\maciota\desktop\trabalho 1 fix\src\testesentidades.cpp
+	"testesEntidades.h"
+
