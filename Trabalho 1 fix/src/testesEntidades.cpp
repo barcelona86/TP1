@@ -96,12 +96,30 @@ void TUImovel::testarCenarioEndereco(){
         estado = FALHA;
 }
 
+void TUImovel::testarCenarioDataInicialImovel(){
+    DataInicialImovel valor;
+    valor.setDataInicialImovel(VALOR_VALIDO_DATAINICIALIMOVEL);
+    entidade->setDataInicialImovel(valor);
+    if (entidade->getDataInicialImovel().getDataInicialImovel() != VALOR_VALIDO_DATAINICIALIMOVEL)
+        estado = FALHA;
+}
+
+void TUImovel::testarCenarioDataFinalImovel(){
+    DataFinalImovel valor;
+    valor.setDataFinalImovel(VALOR_VALIDO_DATAFINALIMOVEL);
+    entidade->setDataFinalImovel(valor);
+    if (entidade->getDataFinalImovel().getDataFinalImovel() != VALOR_VALIDO_DATAFINALIMOVEL)
+        estado = FALHA;
+}
+
 int TUImovel::run(){
   setUp();
   testarCenarioCodigoImovel();
   testarCenarioClasse();
   testarCenarioDescricao();
   testarCenarioEndereco();
+  testarCenarioDataInicialImovel();
+  testarCenarioDataFinalImovel();
   tearDown();
   return estado;
 }

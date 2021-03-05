@@ -80,3 +80,21 @@ void Endereco::setEndereco(string endereco){
     validar(endereco);
     this->endereco = endereco;
 }
+
+void DataInicialImovel::validar(int dataInicialImovel){
+    if (dataInicialImovel > LIMITEMAXIMO || dataInicialImovel < LIMITEMINIMO)
+        throw invalid_argument("Argumento invalido.");
+}
+void DataInicialImovel::setDataInicialImovel(int dataInicialImovel){
+    validar(dataInicialImovel);
+    this->dataInicialImovel = dataInicialImovel;
+}
+
+void DataFinalImovel::validar(int dataFinalImovel){
+    if (dataFinalImovel > LIMITEMAXIMO || dataFinalImovel < LIMITEMINIMO)
+        throw invalid_argument("Argumento invalido.");
+}
+void DataFinalImovel::setDataFinalImovel(int dataFinalImovel){
+    validar(dataFinalImovel);
+    this->dataFinalImovel = dataFinalImovel;
+}

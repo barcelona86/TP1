@@ -34,6 +34,8 @@ class TUImovel {
         const static int VALOR_VALIDO_CLASSE = 2;
         string VALOR_VALIDO_DESCRICAO = "CASINHA.";
         string VALOR_VALIDO_ENDERECO = "ASB 98";
+        const static int VALOR_VALIDO_DATAINICIALIMOVEL = 200628;
+        const static int VALOR_VALIDO_DATAFINALIMOVEL = 200629;
         Imovel *entidade;
         int estado;
 
@@ -43,6 +45,8 @@ class TUImovel {
         void testarCenarioClasse();
         void testarCenarioDescricao();
         void testarCenarioEndereco();
+        void testarCenarioDataInicialImovel();
+        void testarCenarioDataFinalImovel();
     public:
         const static int SUCESSO = 0;
         const static int FALHA = -1;

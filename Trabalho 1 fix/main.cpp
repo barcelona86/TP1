@@ -87,6 +87,22 @@ int main()
         case TUEndereco::FALHA  : cout << "FALHA - ENDERECO \n";
             break;
     }
+
+    TUDataInicialImovel testeDataInicialImovel;
+    switch(testeDataInicialImovel.run()){
+        case TUDataInicialImovel::SUCESSO: cout << "SUCESSO - DATA INICIAL \n";
+            break;
+        case TUDataInicialImovel::FALHA  : cout << "FALHA - DATA INICIAL \n";
+            break;
+    }
+
+    TUDataFinalImovel testeDataFinalImovel;
+    switch(testeDataFinalImovel.run()){
+        case TUDataFinalImovel::SUCESSO: cout << "SUCESSO - DATA FINAL \n";
+            break;
+        case TUDataFinalImovel::FALHA  : cout << "FALHA - DATA FINAL \n";
+            break;
+    }
     system("pause");
     return 0;
 }

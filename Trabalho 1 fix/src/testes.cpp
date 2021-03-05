@@ -289,3 +289,74 @@ int TUEndereco::run(){
     return estado;
 }
 
+void TUDataInicialImovel::setUp(){
+    dataInicialImovel = new DataInicialImovel();
+    estado = SUCESSO;
+}
+void TUDataInicialImovel::tearDown(){
+    delete dataInicialImovel;
+}
+void TUDataInicialImovel::testarCenarioSucesso(){
+    try{
+        dataInicialImovel->setDataInicialImovel(VALOR_VALIDO);
+        if (dataInicialImovel->getDataInicialImovel() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUDataInicialImovel::testarCenarioFalha(){
+    try{
+        dataInicialImovel->setDataInicialImovel(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (dataInicialImovel->getDataInicialImovel() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUDataInicialImovel::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+void TUDataFinalImovel::setUp(){
+    dataFinalImovel = new DataFinalImovel();
+    estado = SUCESSO;
+}
+void TUDataFinalImovel::tearDown(){
+    delete dataFinalImovel;
+}
+void TUDataFinalImovel::testarCenarioSucesso(){
+    try{
+        dataFinalImovel->setDataFinalImovel(VALOR_VALIDO);
+        if (dataFinalImovel->getDataFinalImovel() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUDataFinalImovel::testarCenarioFalha(){
+    try{
+        dataFinalImovel->setDataFinalImovel(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (dataFinalImovel->getDataFinalImovel() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUDataFinalImovel::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}

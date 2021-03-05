@@ -149,4 +149,40 @@ class TUEndereco{
         const static int FALHA   = -1;
         int run();
 };
+
+class TUDataInicialImovel{
+    private:
+        int VALOR_VALIDO   = 200628;
+        int VALOR_INVALIDO = 999999;
+        DataInicialImovel *dataInicialImovel;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
+
+class TUDataFinalImovel{
+    private:
+        int VALOR_VALIDO   = 200629;
+        int VALOR_INVALIDO = 999999;
+        DataFinalImovel *dataFinalImovel;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
 #endif // TESTES_H_INCLUDED

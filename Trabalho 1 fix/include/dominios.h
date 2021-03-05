@@ -122,4 +122,36 @@ class Endereco{
             return endereco;
         }
 };
+//*************MELHORAR TESTE*************
+class DataInicialImovel{
+    private:
+        int dataInicialImovel;
+        const static int LIMITEMAXIMO = 311299;
+        const static int LIMITEMINIMO = 010121;
+        void validar(int);
+
+    public:
+        void setDataInicialImovel(int);
+
+
+        int getDataInicialImovel() const {
+            return dataInicialImovel;
+        }
+};
+
+class DataFinalImovel{
+    private:
+        int dataFinalImovel;
+        const static int LIMITEMAXIMO = 311299;
+        const static int LIMITEMINIMO = 010121;
+        void validar(int);
+
+    public:
+        void setDataFinalImovel(int);
+
+
+        int getDataFinalImovel() const {
+            return dataFinalImovel;
+        }
+};
 #endif
