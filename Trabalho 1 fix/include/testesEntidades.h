@@ -27,4 +27,25 @@ class TUUsuario {
         int run();
 };
 
+//Imóvel
+class TUImovel {
+    private:
+        string VALOR_VALIDO_CODIGOIMOVEL = "11111";
+        const static int VALOR_VALIDO_CLASSE = 2;
+        string VALOR_VALIDO_DESCRICAO = "CASINHA.";
+        string VALOR_VALIDO_ENDERECO = "ASB 98";
+        Imovel *entidade;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioCodigoImovel();
+        void testarCenarioClasse();
+        void testarCenarioDescricao();
+        void testarCenarioEndereco();
+    public:
+        const static int SUCESSO = 0;
+        const static int FALHA = -1;
+        int run();
+};
 #endif // TESTESENTIDADES_H_INCLUDED

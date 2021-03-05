@@ -77,4 +77,76 @@ class TUTelefone{
         int run();
 };
 
+//Imóvel
+class TUCodigoImovel{
+    private:
+        string VALOR_VALIDO   = "11111";
+        string VALOR_INVALIDO = "00000";
+        CodigoImovel *codigoImovel;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
+
+class TUClasse{
+    private:
+        const static int VALOR_VALIDO   = 2;
+        const static int VALOR_INVALIDO = 4;
+        Classe *classe;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
+
+class TUDescricao{
+    private:
+        string VALOR_VALIDO   = "CASINHA.";
+        string VALOR_INVALIDO = "CASA";
+        Descricao *descricao;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
+
+class TUEndereco{
+    private:
+        string VALOR_VALIDO   = "ASB 98";
+        string VALOR_INVALIDO = "OI";
+        Endereco *endereco;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
 #endif // TESTES_H_INCLUDED

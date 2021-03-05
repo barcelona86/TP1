@@ -53,3 +53,55 @@ int TUUsuario::run(){
   tearDown();
   return estado;
 }
+
+//Imóvel
+void TUImovel::setUp(){
+    entidade = new Imovel();
+    estado = SUCESSO;
+}
+
+void TUImovel::tearDown(){
+    delete entidade;
+}
+
+void TUImovel::testarCenarioCodigoImovel(){
+    CodigoImovel valor;
+    valor.setCodigoImovel(VALOR_VALIDO_CODIGOIMOVEL);
+    entidade->setCodigoImovel(valor);
+    if (entidade->getCodigoImovel().getCodigoImovel() != VALOR_VALIDO_CODIGOIMOVEL)
+        estado = FALHA;
+}
+
+void TUImovel::testarCenarioClasse(){
+    Classe valor;
+    valor.setClasse(VALOR_VALIDO_CLASSE);
+    entidade->setClasse(valor);
+    if (entidade->getClasse().getClasse() != VALOR_VALIDO_CLASSE)
+        estado = FALHA;
+}
+
+void TUImovel::testarCenarioDescricao(){
+    Descricao valor;
+    valor.setDescricao(VALOR_VALIDO_DESCRICAO);
+    entidade->setDescricao(valor);
+    if (entidade->getDescricao().getDescricao() != VALOR_VALIDO_DESCRICAO)
+        estado = FALHA;
+}
+
+void TUImovel::testarCenarioEndereco(){
+    Endereco valor;
+    valor.setEndereco(VALOR_VALIDO_ENDERECO);
+    entidade->setEndereco(valor);
+    if (entidade->getEndereco().getEndereco() != VALOR_VALIDO_ENDERECO)
+        estado = FALHA;
+}
+
+int TUImovel::run(){
+  setUp();
+  testarCenarioCodigoImovel();
+  testarCenarioClasse();
+  testarCenarioDescricao();
+  testarCenarioEndereco();
+  tearDown();
+  return estado;
+}

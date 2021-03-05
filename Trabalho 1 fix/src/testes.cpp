@@ -1,5 +1,5 @@
 #include "testes.h"
-//Usuário
+//Usuário***********************
 void TUNome::setUp(){
     nome = new Nome();
     estado = SUCESSO;
@@ -137,6 +137,151 @@ void TUTelefone::testarCenarioFalha(){
     }
 }
 int TUTelefone::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+//Imóvel***********************
+void TUCodigoImovel::setUp(){
+    codigoImovel = new CodigoImovel();
+    estado = SUCESSO;
+}
+void TUCodigoImovel::tearDown(){
+    delete codigoImovel;
+}
+void TUCodigoImovel::testarCenarioSucesso(){
+    try{
+        codigoImovel->setCodigoImovel(VALOR_VALIDO);
+        if (codigoImovel->getCodigoImovel() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUCodigoImovel::testarCenarioFalha(){
+    try{
+        codigoImovel->setCodigoImovel(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (codigoImovel->getCodigoImovel() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUCodigoImovel::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+void TUClasse::setUp(){
+    classe = new Classe();
+    estado = SUCESSO;
+}
+void TUClasse::tearDown(){
+    delete classe;
+}
+void TUClasse::testarCenarioSucesso(){
+    try{
+        classe->setClasse(VALOR_VALIDO);
+        if (classe->getClasse() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUClasse::testarCenarioFalha(){
+    try{
+        classe->setClasse(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (classe->getClasse() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUClasse::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+void TUDescricao::setUp(){
+    descricao = new Descricao();
+    estado = SUCESSO;
+}
+void TUDescricao::tearDown(){
+    delete descricao;
+}
+void TUDescricao::testarCenarioSucesso(){
+    try{
+        descricao->setDescricao(VALOR_VALIDO);
+        if (descricao->getDescricao() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUDescricao::testarCenarioFalha(){
+    try{
+        descricao->setDescricao(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (descricao->getDescricao() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUDescricao::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+void TUEndereco::setUp(){
+    endereco = new Endereco();
+    estado = SUCESSO;
+}
+void TUEndereco::tearDown(){
+    delete endereco;
+}
+void TUEndereco::testarCenarioSucesso(){
+    try{
+        endereco->setEndereco(VALOR_VALIDO);
+        if (endereco->getEndereco() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUEndereco::testarCenarioFalha(){
+    try{
+        endereco->setEndereco(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (endereco->getEndereco() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUEndereco::run(){
     setUp();
     testarCenarioSucesso();
     testarCenarioFalha();

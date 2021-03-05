@@ -56,4 +56,58 @@ inline void Usuario::setTelefone(const Telefone &telefone){
 inline Telefone Usuario::getTelefone() const{
     return telefone;
 }
+
+//Imóvel
+class Imovel{
+    private:
+        //Domínio               //Nome domínio
+        CodigoImovel            codigoImovel;
+        Classe                  classe;
+        Descricao               descricao;
+        Endereco                endereco;
+    public:
+
+        void setCodigoImovel(const CodigoImovel&);
+        CodigoImovel getCodigoImovel() const;
+
+        void setClasse(const Classe&);
+        Classe getClasse() const;
+
+        void setDescricao(const Descricao&);
+        Descricao getDescricao() const;
+
+        void setEndereco(const Endereco&);
+        Endereco getEndereco() const;
+};
+inline void Imovel::setCodigoImovel(const CodigoImovel &codigoImovel){
+    this->codigoImovel = codigoImovel;
+}
+
+inline CodigoImovel Imovel::getCodigoImovel() const{
+    return codigoImovel;
+}
+
+inline void Imovel::setClasse(const Classe &classe){
+    this->classe = classe;
+}
+
+inline Classe Imovel::getClasse() const{
+    return classe;
+}
+
+inline void Imovel::setDescricao(const Descricao &descricao){
+    this->descricao = descricao;
+}
+
+inline Descricao Imovel::getDescricao() const{
+    return descricao;
+}
+
+inline void Imovel::setEndereco(const Endereco &endereco){
+    this->endereco = endereco;
+}
+
+inline Endereco Imovel::getEndereco() const{
+    return endereco;
+}
 #endif // ENTIDADES_H

@@ -61,4 +61,65 @@ class Telefone{
             return telefone;
         }
 };
+
+//Imóvel
+class CodigoImovel{
+    private:
+        string codigoImovel;
+        string LIMITEMINIMO="00000";
+        const static int LIMITEMAXIMO=5;
+        void validar(string);
+
+    public:
+        void setCodigoImovel(string);
+
+        string getCodigoImovel() const{
+            return codigoImovel;
+        }
+};
+
+class Classe{
+    private:
+        int classe;
+        const static int LIMITEMINIMO=1;
+        const static int LIMITEMAXIMO=3;
+        void validar(int);
+
+    public:
+        void setClasse(int);
+
+        int getClasse() const{
+            return classe;
+        }
+};
+
+class Descricao{
+    private:
+        string descricao;
+        const static int LIMITEMINIMO=5;
+        const static int LIMITEMAXIMO=30;
+        void validar(string);
+
+    public:
+        void setDescricao(string);
+
+        string getDescricao() const{
+            return descricao;
+        }
+};
+
+class Endereco{
+    private:
+        string endereco;
+        const static int LIMITEMINIMO=5;
+        const static int LIMITEMAXIMO=20;
+        void validar(string);
+
+    public:
+        void setEndereco(string);
+
+        string getEndereco() const{
+            return endereco;
+        }
+};
 #endif
