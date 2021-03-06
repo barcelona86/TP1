@@ -185,4 +185,22 @@ class TUDataFinalImovel{
         const static int FALHA   = -1;
         int run();
 };
+
+class TUNumeroImovel{
+    private:
+        const static int VALOR_VALIDO   = 5;
+        const static int VALOR_INVALIDO = 21;
+        NumeroImovel *hospedesImovel;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
 #endif // TESTES_H_INCLUDED

@@ -154,4 +154,20 @@ class DataFinalImovel{
             return dataFinalImovel;
         }
 };
+
+class NumeroImovel{
+    private:
+        int hospedesImovel;
+        const static int LIMITEMAXIMO = 20;
+        const static int LIMITEMINIMO = 0;
+
+        void validar(int);
+
+    public:
+        void setHospedesImovel(int);
+
+        int getHospedesImovel() const{
+            return hospedesImovel;
+        }
+};
 #endif

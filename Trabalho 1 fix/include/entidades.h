@@ -67,6 +67,7 @@ class Imovel{
         Endereco                endereco;
         DataInicialImovel       dataInicialImovel;
         DataFinalImovel         dataFinalImovel;
+        NumeroImovel            hospedesImovel;
     public:
 
         void setCodigoImovel(const CodigoImovel&);
@@ -86,6 +87,9 @@ class Imovel{
 
         void setDataFinalImovel(const DataFinalImovel&);
         DataFinalImovel getDataFinalImovel() const;
+
+        void setHospedesImovel(const NumeroImovel&);
+        NumeroImovel getHospedesImovel() const;
 };
 inline void Imovel::setCodigoImovel(const CodigoImovel &codigoImovel){
     this->codigoImovel = codigoImovel;
@@ -133,5 +137,13 @@ inline void Imovel::setDataFinalImovel(const DataFinalImovel &dataFinalImovel){
 
 inline DataFinalImovel Imovel::getDataFinalImovel() const{
     return dataFinalImovel;
+}
+
+inline void Imovel::setHospedesImovel(const NumeroImovel &hospedesImovel){
+    this->hospedesImovel = hospedesImovel;
+}
+
+inline NumeroImovel Imovel::getHospedesImovel() const{
+    return hospedesImovel;
 }
 #endif // ENTIDADES_H

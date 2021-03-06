@@ -360,3 +360,39 @@ int TUDataFinalImovel::run(){
     tearDown();
     return estado;
 }
+
+void TUNumeroImovel::setUp(){
+    hospedesImovel = new NumeroImovel();
+    estado = SUCESSO;
+}
+void TUNumeroImovel::tearDown(){
+    delete hospedesImovel;
+}
+void TUNumeroImovel::testarCenarioSucesso(){
+    try{
+        hospedesImovel->setHospedesImovel(VALOR_VALIDO);
+        if (hospedesImovel->getHospedesImovel() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUNumeroImovel::testarCenarioFalha(){
+    try{
+        hospedesImovel->setHospedesImovel(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (hospedesImovel->getHospedesImovel() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUNumeroImovel::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}

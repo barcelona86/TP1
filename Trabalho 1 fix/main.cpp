@@ -90,17 +90,25 @@ int main()
 
     TUDataInicialImovel testeDataInicialImovel;
     switch(testeDataInicialImovel.run()){
-        case TUDataInicialImovel::SUCESSO: cout << "SUCESSO - DATA INICIAL \n";
+        case TUDataInicialImovel::SUCESSO: cout << "SUCESSO - DATA INICIAL IMOVEL \n";
             break;
-        case TUDataInicialImovel::FALHA  : cout << "FALHA - DATA INICIAL \n";
+        case TUDataInicialImovel::FALHA  : cout << "FALHA - DATA INICIAL IMOVEL \n";
             break;
     }
 
     TUDataFinalImovel testeDataFinalImovel;
     switch(testeDataFinalImovel.run()){
-        case TUDataFinalImovel::SUCESSO: cout << "SUCESSO - DATA FINAL \n";
+        case TUDataFinalImovel::SUCESSO: cout << "SUCESSO - DATA FINAL IMOVEL \n";
             break;
-        case TUDataFinalImovel::FALHA  : cout << "FALHA - DATA FINAL \n";
+        case TUDataFinalImovel::FALHA  : cout << "FALHA - DATA FINAL IMOVEL \n";
+            break;
+    }
+
+    TUNumeroImovel testeNumeroImovel;
+    switch(testeNumeroImovel.run()){
+        case TUNumeroImovel::SUCESSO: cout << "SUCESSO - HOSPEDES IMOVEL \n";
+            break;
+        case TUNumeroImovel::FALHA  : cout << "FALHA - HOSPEDES IMOVEL \n";
             break;
     }
     system("pause");

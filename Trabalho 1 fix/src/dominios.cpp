@@ -98,3 +98,12 @@ void DataFinalImovel::setDataFinalImovel(int dataFinalImovel){
     validar(dataFinalImovel);
     this->dataFinalImovel = dataFinalImovel;
 }
+
+void NumeroImovel::validar(int hospedesImovel){
+    if (hospedesImovel > LIMITEMAXIMO || hospedesImovel < LIMITEMINIMO)
+        throw invalid_argument("Argumento invalido.");
+}
+void NumeroImovel::setHospedesImovel(int hospedesImovel){
+    validar(hospedesImovel);
+    this->hospedesImovel = hospedesImovel;
+}
