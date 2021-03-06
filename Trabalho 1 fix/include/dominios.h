@@ -170,4 +170,20 @@ class NumeroImovel{
             return hospedesImovel;
         }
 };
+
+class MoedaImovel{
+    private:
+        double valorImovel;
+        double LIMITEMAXIMO = 1000000.00;
+        double LIMITEMINIMO = 1;
+
+        void validar(double);
+
+    public:
+        void setValorImovel(double);
+
+        double getValorImovel() const{
+            return valorImovel;
+        }
+};
 #endif

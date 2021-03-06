@@ -396,3 +396,39 @@ int TUNumeroImovel::run(){
     tearDown();
     return estado;
 }
+
+void TUMoedaImovel::setUp(){
+    valorImovel = new MoedaImovel();
+    estado = SUCESSO;
+}
+void TUMoedaImovel::tearDown(){
+    delete valorImovel;
+}
+void TUMoedaImovel::testarCenarioSucesso(){
+    try{
+        valorImovel->setValorImovel(VALOR_VALIDO);
+        if (valorImovel->getValorImovel() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+void TUMoedaImovel::testarCenarioFalha(){
+    try{
+        valorImovel->setValorImovel(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (valorImovel->getValorImovel() == VALOR_INVALIDO)
+            estado = FALHA;
+        return;
+    }
+}
+int TUMoedaImovel::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}

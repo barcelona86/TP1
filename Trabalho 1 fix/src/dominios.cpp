@@ -107,3 +107,12 @@ void NumeroImovel::setHospedesImovel(int hospedesImovel){
     validar(hospedesImovel);
     this->hospedesImovel = hospedesImovel;
 }
+
+void MoedaImovel::validar(double valorImovel){
+    if (valorImovel > LIMITEMAXIMO || valorImovel < LIMITEMINIMO)
+        throw invalid_argument("Argumento invalido.");
+}
+void MoedaImovel::setValorImovel(double valorImovel){
+    validar(valorImovel);
+    this->valorImovel = valorImovel;
+}

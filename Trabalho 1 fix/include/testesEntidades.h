@@ -37,6 +37,7 @@ class TUImovel {
         const static int VALOR_VALIDO_DATAINICIALIMOVEL = 200628;
         const static int VALOR_VALIDO_DATAFINALIMOVEL = 200629;
         const static int VALOR_VALIDO_NUMEROIMOVEL = 5;
+        double VALOR_VALIDO_MOEDAIMOVEL = 50.00;
         Imovel *entidade;
         int estado;
 
@@ -49,6 +50,7 @@ class TUImovel {
         void testarCenarioDataInicialImovel();
         void testarCenarioDataFinalImovel();
         void testarCenarioNumeroImovel();
+        void testarCenarioMoedaImovel();
     public:
         const static int SUCESSO = 0;
         const static int FALHA = -1;

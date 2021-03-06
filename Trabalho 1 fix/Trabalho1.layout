@@ -2,58 +2,19 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="src\testesEntidades.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\dominios.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3614" topLine="0" />
+			<Cursor1 position="3715" topLine="71" />
 		</Cursor>
 		<Folding>
-			<Collapse line="5" />
-			<Collapse line="10" />
-			<Collapse line="14" />
+			<Collapse line="7" />
 			<Collapse line="22" />
-			<Collapse line="30" />
-			<Collapse line="38" />
-			<Collapse line="46" />
-			<Collapse line="57" />
-			<Collapse line="62" />
-			<Collapse line="66" />
-			<Collapse line="74" />
-			<Collapse line="82" />
-		</Folding>
-	</File>
-	<File name="src\dominios.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3468" topLine="27" />
-		</Cursor>
-		<Folding>
-			<Collapse line="3" />
-			<Collapse line="8" />
-			<Collapse line="13" />
-			<Collapse line="18" />
-			<Collapse line="23" />
-			<Collapse line="28" />
-			<Collapse line="33" />
-			<Collapse line="38" />
-			<Collapse line="44" />
-			<Collapse line="49" />
-			<Collapse line="54" />
-			<Collapse line="58" />
-			<Collapse line="63" />
-			<Collapse line="68" />
-			<Collapse line="73" />
-			<Collapse line="78" />
-			<Collapse line="83" />
-			<Collapse line="87" />
-			<Collapse line="92" />
-			<Collapse line="96" />
-		</Folding>
-	</File>
-	<File name="include\testesEntidades.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1179" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="8" />
+			<Collapse line="36" />
+			<Collapse line="50" />
+			<Collapse line="65" />
+			<Collapse line="80" />
+			<Collapse line="95" />
+			<Collapse line="110" />
 		</Folding>
 	</File>
 	<File name="src\entidades.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -63,7 +24,7 @@
 	</File>
 	<File name="include\testes.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4628" topLine="0" />
+			<Cursor1 position="4825" topLine="7" />
 		</Cursor>
 		<Folding>
 			<Collapse line="7" />
@@ -74,11 +35,13 @@
 			<Collapse line="98" />
 			<Collapse line="116" />
 			<Collapse line="134" />
+			<Collapse line="152" />
+			<Collapse line="170" />
 		</Folding>
 	</File>
 	<File name="src\testes.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="8948" topLine="119" />
+			<Cursor1 position="10026" topLine="133" />
 		</Cursor>
 		<Folding>
 			<Collapse line="2" />
@@ -121,33 +84,16 @@
 			<Collapse line="262" />
 			<Collapse line="272" />
 			<Collapse line="283" />
-		</Folding>
-	</File>
-	<File name="include\entidades.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3667" topLine="88" />
-		</Cursor>
-		<Folding>
-			<Collapse line="7" />
-			<Collapse line="27" />
-			<Collapse line="31" />
-			<Collapse line="35" />
-			<Collapse line="39" />
-			<Collapse line="43" />
-			<Collapse line="47" />
-			<Collapse line="51" />
-			<Collapse line="55" />
-			<Collapse line="93" />
-			<Collapse line="97" />
-			<Collapse line="101" />
-			<Collapse line="105" />
-			<Collapse line="109" />
-			<Collapse line="113" />
+			<Collapse line="363" />
+			<Collapse line="367" />
+			<Collapse line="370" />
+			<Collapse line="380" />
+			<Collapse line="391" />
 		</Folding>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3259" topLine="51" />
+			<Cursor1 position="3640" topLine="57" />
 		</Cursor>
 		<Folding>
 			<Collapse line="13" />
@@ -162,19 +108,82 @@
 			<Collapse line="83" />
 		</Folding>
 	</File>
-	<File name="include\dominios.h" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\entidades.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3558" topLine="57" />
+			<Cursor1 position="1625" topLine="41" />
 		</Cursor>
 		<Folding>
 			<Collapse line="7" />
+			<Collapse line="27" />
+			<Collapse line="31" />
+			<Collapse line="35" />
+			<Collapse line="39" />
+			<Collapse line="43" />
+			<Collapse line="47" />
+			<Collapse line="51" />
+			<Collapse line="55" />
+			<Collapse line="97" />
+			<Collapse line="101" />
+			<Collapse line="105" />
+			<Collapse line="109" />
+			<Collapse line="113" />
+			<Collapse line="117" />
+		</Folding>
+	</File>
+	<File name="include\testesEntidades.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1662" topLine="10" />
+		</Cursor>
+		<Folding>
+			<Collapse line="8" />
+		</Folding>
+	</File>
+	<File name="src\testesEntidades.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3598" topLine="35" />
+		</Cursor>
+		<Folding>
+			<Collapse line="5" />
+			<Collapse line="10" />
+			<Collapse line="14" />
 			<Collapse line="22" />
-			<Collapse line="36" />
-			<Collapse line="50" />
-			<Collapse line="65" />
-			<Collapse line="80" />
-			<Collapse line="95" />
-			<Collapse line="110" />
+			<Collapse line="30" />
+			<Collapse line="38" />
+			<Collapse line="46" />
+			<Collapse line="57" />
+			<Collapse line="62" />
+			<Collapse line="66" />
+			<Collapse line="74" />
+			<Collapse line="82" />
+		</Folding>
+	</File>
+	<File name="src\dominios.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3703" topLine="30" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="8" />
+			<Collapse line="13" />
+			<Collapse line="18" />
+			<Collapse line="23" />
+			<Collapse line="28" />
+			<Collapse line="33" />
+			<Collapse line="38" />
+			<Collapse line="44" />
+			<Collapse line="49" />
+			<Collapse line="54" />
+			<Collapse line="58" />
+			<Collapse line="63" />
+			<Collapse line="68" />
+			<Collapse line="73" />
+			<Collapse line="78" />
+			<Collapse line="83" />
+			<Collapse line="87" />
+			<Collapse line="92" />
+			<Collapse line="96" />
+			<Collapse line="101" />
+			<Collapse line="105" />
 		</Folding>
 	</File>
 </CodeBlocks_layout_file>

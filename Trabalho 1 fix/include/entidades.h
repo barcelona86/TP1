@@ -68,6 +68,7 @@ class Imovel{
         DataInicialImovel       dataInicialImovel;
         DataFinalImovel         dataFinalImovel;
         NumeroImovel            hospedesImovel;
+        MoedaImovel             valorImovel;
     public:
 
         void setCodigoImovel(const CodigoImovel&);
@@ -90,6 +91,9 @@ class Imovel{
 
         void setHospedesImovel(const NumeroImovel&);
         NumeroImovel getHospedesImovel() const;
+
+        void setValorImovel(const MoedaImovel&);
+        MoedaImovel getValorImovel() const;
 };
 inline void Imovel::setCodigoImovel(const CodigoImovel &codigoImovel){
     this->codigoImovel = codigoImovel;
@@ -145,5 +149,13 @@ inline void Imovel::setHospedesImovel(const NumeroImovel &hospedesImovel){
 
 inline NumeroImovel Imovel::getHospedesImovel() const{
     return hospedesImovel;
+}
+
+inline void Imovel::setValorImovel(const MoedaImovel &valorImovel){
+    this->valorImovel = valorImovel;
+}
+
+inline MoedaImovel Imovel::getValorImovel() const{
+    return valorImovel;
 }
 #endif // ENTIDADES_H

@@ -203,4 +203,22 @@ class TUNumeroImovel{
         const static int FALHA   = -1;
         int run();
 };
+
+class TUMoedaImovel{
+    private:
+        double VALOR_VALIDO   = 50.00;
+        double VALOR_INVALIDO = 0;
+        MoedaImovel *valorImovel;
+        int estado;
+
+        void setUp();
+        void tearDown();
+        void testarCenarioSucesso();
+        void testarCenarioFalha();
+
+    public:
+        const static int SUCESSO =  0;
+        const static int FALHA   = -1;
+        int run();
+};
 #endif // TESTES_H_INCLUDED

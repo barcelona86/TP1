@@ -111,6 +111,14 @@ int main()
         case TUNumeroImovel::FALHA  : cout << "FALHA - HOSPEDES IMOVEL \n";
             break;
     }
+
+    TUMoedaImovel testeMoedaImovel;
+    switch(testeMoedaImovel.run()){
+        case TUMoedaImovel::SUCESSO: cout << "SUCESSO - VALOR IMOVEL \n";
+            break;
+        case TUMoedaImovel::FALHA  : cout << "FALHA - VALOR IMOVEL \n";
+            break;
+    }
     system("pause");
     return 0;
 }

@@ -120,6 +120,14 @@ void TUImovel::testarCenarioNumeroImovel(){
         estado = FALHA;
 }
 
+void TUImovel::testarCenarioMoedaImovel(){
+    MoedaImovel valor;
+    valor.setValorImovel(VALOR_VALIDO_MOEDAIMOVEL);
+    entidade->setValorImovel(valor);
+    if (entidade->getValorImovel().getValorImovel() != VALOR_VALIDO_MOEDAIMOVEL)
+        estado = FALHA;
+}
+
 int TUImovel::run(){
   setUp();
   testarCenarioCodigoImovel();
@@ -129,6 +137,7 @@ int TUImovel::run(){
   testarCenarioDataInicialImovel();
   testarCenarioDataFinalImovel();
   testarCenarioNumeroImovel();
+  testarCenarioMoedaImovel();
   tearDown();
   return estado;
 }

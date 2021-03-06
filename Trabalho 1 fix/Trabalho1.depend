@@ -98,36 +98,36 @@
 1614918656 source:c:\users\maciota\desktop\trabalho 1 fix\src\testesentidades.cpp
 	"testesEntidades.h"
 
-1615030752 source:c:\users\maciota\desktop\tp1-main\trabalho 1 fix\main.cpp
+1615032487 source:c:\users\maciota\desktop\tp1-main\trabalho 1 fix\main.cpp
 	<iostream>
 	"dominios.h"
 	"testes.h"
 	"entidades.h"
 	"testesEntidades.h"
 
-1615030125 c:\users\maciota\desktop\tp1-main\trabalho 1 fix\include\dominios.h
+1615032606 c:\users\maciota\desktop\tp1-main\trabalho 1 fix\include\dominios.h
 	<stdexcept>
 
-1615030437 c:\users\maciota\desktop\tp1-main\trabalho 1 fix\include\testes.h
+1615032487 c:\users\maciota\desktop\tp1-main\trabalho 1 fix\include\testes.h
 	"dominios.h"
 
-1615030437 c:\users\maciota\desktop\tp1-main\trabalho 1 fix\include\entidades.h
+1615032550 c:\users\maciota\desktop\tp1-main\trabalho 1 fix\include\entidades.h
 	"dominios.h"
 
-1615030437 c:\users\maciota\desktop\tp1-main\trabalho 1 fix\include\testesentidades.h
+1615032487 c:\users\maciota\desktop\tp1-main\trabalho 1 fix\include\testesentidades.h
 	"dominios.h"
 	"entidades.h"
 
-1615030169 source:c:\users\maciota\desktop\tp1-main\trabalho 1 fix\src\dominios.cpp
+1615032487 source:c:\users\maciota\desktop\tp1-main\trabalho 1 fix\src\dominios.cpp
 	"dominios.h"
 	<iostream>
 
 1614920296 source:c:\users\maciota\desktop\tp1-main\trabalho 1 fix\src\entidades.cpp
 	"entidades.h"
 
-1615030449 source:c:\users\maciota\desktop\tp1-main\trabalho 1 fix\src\testes.cpp
+1615031516 source:c:\users\maciota\desktop\tp1-main\trabalho 1 fix\src\testes.cpp
 	"testes.h"
 
-1615030437 source:c:\users\maciota\desktop\tp1-main\trabalho 1 fix\src\testesentidades.cpp
+1615031607 source:c:\users\maciota\desktop\tp1-main\trabalho 1 fix\src\testesentidades.cpp
 	"testesEntidades.h"
 
