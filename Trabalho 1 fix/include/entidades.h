@@ -4,7 +4,7 @@
 #include "dominios.h"
 
 using namespace std;
-//Usuário
+//UsuÃ¡rio
 class Usuario{
     private:
         Nome        nome;
@@ -57,10 +57,10 @@ inline Telefone Usuario::getTelefone() const{
     return telefone;
 }
 
-//Imóvel
+//ImÃ³vel
 class Imovel{
     private:
-        //Domínio               //Nome domínio
+        //DomÃ­nio               //Nome domÃ­nio
         CodigoImovel            codigoImovel;
         Classe                  classe;
         Descricao               descricao;
@@ -158,4 +158,68 @@ inline void Imovel::setValorImovel(const MoedaImovel &valorImovel){
 inline MoedaImovel Imovel::getValorImovel() const{
     return valorImovel;
 }
+
+class Proposta{
+    private:
+        CodigoProposta              codigoProposta;
+        DataInicialProposta         dataInicialProposta;
+        DataFinalProposta           dataFinalProposta;
+        NumeroProposta              hospedesProposta;
+        MoedaProposta               valorProposta;
+    public:
+        void setCodigoProposta(const CodigoProposta&);
+        CodigoProposta getCodigoProposta() const;
+
+        void setDataInicialProposta(const DataInicialProposta&);
+        DataInicialProposta getDataInicialProposta() const;
+
+        void setDataFinalProposta(const DataFinalProposta&);
+        DataFinalProposta getDataFinalProposta() const;
+
+        void setHospedesProposta(const NumeroProposta&);
+        NumeroProposta getHospedesProposta() const;
+
+        void setValorProposta(const MoedaProposta&);
+        MoedaProposta getValorProposta() const;
+};
+inline void Proposta::setCodigoProposta(const CodigoProposta &codigoProposta){
+    this->codigoProposta = codigoProposta;
+}
+
+inline CodigoProposta Proposta::getCodigoProposta() const{
+    return codigoProposta;
+}
+
+inline void Proposta::setDataInicialProposta(const DataInicialProposta &dataInicialProposta){
+    this->dataInicialProposta = dataInicialProposta;
+}
+
+inline DataInicialProposta Proposta::getDataInicialProposta() const{
+    return dataInicialProposta;
+}
+
+inline void Proposta::setDataFinalProposta(const DataFinalProposta &dataFinalProposta){
+    this->dataFinalProposta = dataFinalProposta;
+}
+
+inline DataFinalProposta Proposta::getDataFinalProposta() const{
+    return dataFinalProposta;
+}
+
+inline void Proposta::setHospedesProposta(const NumeroProposta &hospedesProposta){
+    this->hospedesProposta = hospedesProposta;
+}
+
+inline NumeroProposta Proposta::getHospedesProposta() const{
+    return hospedesProposta;
+}
+
+inline void Proposta::setValorProposta(const MoedaProposta &valorProposta){
+    this->valorProposta = valorProposta;
+}
+
+inline MoedaProposta Proposta::getValorProposta() const{
+    return valorProposta;
+}
 #endif // ENTIDADES_H
+
